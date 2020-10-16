@@ -1,0 +1,28 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar{
+    background-color: rgba($color: #000000, $alpha: 0.17);
+    overflow-y: scroll;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 3rem;
+    padding-bottom: 20px;
+
+    img{
+        padding-top: 40px;
+        width: 150px;
+    }
+
+    &__link{
+        background-color: red;
+
+        &:focus, &:hover, &:visited, &:link, &:active {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

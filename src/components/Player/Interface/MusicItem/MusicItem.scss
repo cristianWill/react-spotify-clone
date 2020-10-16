@@ -1,0 +1,35 @@
+.musicItem{
+    background-color: #193121;
+    box-shadow: -5px -5px 10px #1D3927, 5px 5px 10px #15291B;
+    border-radius: 10px;
+    height: 60px;
+    margin-bottom: 20px;
+    padding: 0px 20px ;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center start;
+    grid-template-columns: 70px 1fr .2fr;
+
+    img{
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    &__name{
+        font-size: 13px;
+        font-weight: 500;
+
+    }
+    
+    &:hover{
+        cursor: pointer;
+        transform: translateX(20px);
+        transition: transform 0.2s linear;
+    }
+
+    &__artist{
+        font-size: 0.8rem;
+        place-self: center end;
+        opacity: .8;
+    }
+}

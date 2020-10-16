@@ -1,0 +1,96 @@
+.controls{
+    display: grid;
+    grid-template-columns: 0.6fr 0.3fr 1fr;
+    place-items: center;
+    height: 15vh;
+    
+    &__songInformation{
+
+        display: flex;
+        justify-self: start;
+        padding-left: 3rem;
+
+        img{
+            height: 50px;
+            width: 50px;
+            object-fit: contain;
+            filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.8));
+            border-radius: 8px;
+        }
+        
+        &__name{
+
+            margin: auto;
+
+            p{
+                padding-left: 20px;
+                margin-bottom: 5px;
+                font-weight: 400;
+
+                &:nth-child(1){
+                    font-size: 12px
+                }
+
+                &:nth-child(2){
+                    font-size: 10px;
+                    color: #8A8888;
+                }
+            }
+        }
+    }
+
+    &__songControls{
+        
+        color: #00D02E;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        div{
+            height: 40px;
+            width: 40px;
+            background-color: red;
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #303030;
+            padding: 10px;
+            box-shadow: -15px -15px 42px #4D4D4D, 15px 15px 42px #131313;
+        }
+
+        &__hover:hover{
+            transform: scale(1.3);
+            transition: transform 0.2s linear;
+            cursor: pointer;
+        }
+    }
+
+    &__progress{
+
+        justify-self: start;
+        margin-left: 30px;
+
+        &__total{
+            position: absolute;
+            width: 40vw;
+            height: 5px;
+            border-radius: 2.5px;
+            background-color: #666565;
+        }
+
+        &__status{
+            position: absolute;
+            // width: 30vw;
+            height: 5px;
+            background: #00D02E;
+            box-shadow: 0px 0px 4px #00FF38;
+            border-radius: 2.5px;
+        }
+
+
+    }
+}
